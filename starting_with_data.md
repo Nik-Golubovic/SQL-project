@@ -1,6 +1,7 @@
-Question 1: What ProductSKUs are currently unused?
+**Question 1: What ProductSKUs are currently unused?**
 
-SQL Queries: 
+**SQL Queries: **
+
 select * from products
 where orderedquantity = 0 and stocklevels = 0
 
@@ -11,9 +12,10 @@ Answer: There is a list of 190 unused SKU's in the system. These repersent items
 
 
 
-Question 2: What products are currently stocked that are not being ordered?
+**Question 2: What products are currently stocked that are not being ordered?**
 
-SQL Queries:
+**SQL Queries:**
+
 select s.*, p.* from sales_by_sku s
 join products p
 on p.productsku = s.productsku
@@ -23,9 +25,10 @@ Answer: This is a list of 150 productSKUs that have not been ordered in the time
 
 
 
-Question 3: Where is most of the traffic on the website coming from?
+**Question 3: Where is most of the traffic on the website coming from?**
 
-SQL Queries:
+**SQL Queries:**
+
 SELECT channelgrouping, COUNT(DISTINCT visitid) AS count
 FROM analytics
 GROUP BY channelgrouping;
@@ -35,9 +38,10 @@ Answer: Most of the traffic on the website is coming from refferals, with a smal
 
 
 
-Question 4: In preperation for the holiday season, what products are typically sold in november or december?
+**Question 4: In preperation for the holiday season, what products are typically sold in november or december?**
 
-SQL Queries:
+**SQL Queries:**
+
 SELECT p.name, a.productsku, SUM(an.units_sold) AS units_sold
 FROM all_sessions AS a
 JOIN analytics AS an ON a.fullvisitorid = an.fullvisitorid
