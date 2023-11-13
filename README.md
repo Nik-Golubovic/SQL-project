@@ -2,7 +2,7 @@
 
 ## Project/Goals
 
-The goal of this project is to take the customers datafiles, as they pertain to thier sales, clean and transform them, and determine if there are are insights to be gained to increase revenue or improve processes. We will try to answer some basic questions about where the majority of the revenue comes from as well as what can be done to improve the sales process. 
+The goal of this project is to take the customers datafiles, as they pertain to thier sales, clean and transform them, and determine if there are insights to be gained to increase revenue or improve processes. We will try to answer some basic questions about where the majority of the revenue comes from as well as what can be done to improve the sales process. 
 
 ## Process
 
